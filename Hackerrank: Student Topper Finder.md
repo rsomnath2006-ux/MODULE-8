@@ -28,8 +28,19 @@ To maintain a dictionary of students with their marks in five subjects, calculat
 ---
 
 ## 💻 PROGRAM:
-ADD CODE HERE
-
+```
+n=int(input())
+records={}
+for _ in range(n):
+    data=input().split()
+    name,scores=data[0],list(map(float,data[1:]))
+    records[name]=scores
+query=input()
+average=sum(records[query])/len(records[query])
+print(f"{average:.2f}")
+```
 ## OUTPUT
+<img width="490" height="259" alt="image" src="https://github.com/user-attachments/assets/8c556832-a719-4bd3-8963-965e9635e1c0" />
 
 ## RESULT
+Thus,the program is executed successfully
