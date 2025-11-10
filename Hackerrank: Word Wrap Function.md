@@ -21,14 +21,20 @@ To write a Python function that takes a long string and a specified width, and r
 3. Join the list with `\n` to create the final string.
 4. Return the result.
 5. **End** the program.
-
+   
 ---
-
-
 ## 🧪 Program
-Add Code Here
-
+```
+def wrap(string, max_width):
+    result = ""
+    for i in range(0, len(string), max_width):
+        result += string[i:i+max_width] + "\n"
+    return result.strip()
+string=input()
+max_width=int(input())
+```
 ## Sample Output
+<img width="805" height="301" alt="image" src="https://github.com/user-attachments/assets/80984186-e27a-43cb-8cea-015bdd0f0e13" />
 
 ## Result
-
+Thus,the program is executed successfully
